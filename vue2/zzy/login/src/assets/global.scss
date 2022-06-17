@@ -1,0 +1,132 @@
+// 全局样式(注意：只允许存放全局样式)
+
+// 主题色
+$main-color: #3673a7;
+// 浅色背景
+$background-color: #c9def1;
+// 表格悬停颜色
+$hover-color: #9ec7eaff;
+
+/*选择*/
+:global(::selection) {
+	background-color: $main-color !important;
+}
+:global(.ant-select:not(.ant-select-disabled):hover .ant-select-selector) {
+	border-color: $main-color !important;
+}
+
+/*按钮样式*/
+:global(.ant-btn-primary) {
+	background-color: $main-color !important;
+	border-color: white;
+}
+/*抽屉样式*/
+:global(.ant-drawer-header .ant-drawer-expand-icon) {
+	background-color: $main-color;
+}
+:global(.ant-drawer-header .ant-drawer-indicator) {
+	background-color: $main-color;
+}
+:global(.ant-drawer-title) {
+	color: $main-color !important;
+}
+
+/*选项卡*/
+:global(.ant-tabs-tab-active .ant-tabs-tab-btn .tabName) {
+	color: $main-color !important;
+}
+:global(.ant-tabs-ink-bar) {
+	background-color: $main-color !important;
+}
+
+/*表格*/
+:global(.ant-btn-primary) {
+	background-color: $main-color !important;
+	border-color: white;
+}
+:global(.ant-table-tbody > tr.ant-table-row-selected > td) {
+	background-color: $background-color;
+}
+:global(.ant-table-row-selected .hover) {
+	background-color: $background-color;
+}
+:global(.ant-table-tbody > tr.ant-table-row-selected:hover > td) {
+	background-color: $hover-color;
+}
+:global(.ant-btn-link) {
+	color: $main-color;
+}
+:global(.ant-table-container) {
+	margin-top: 10px;
+}
+
+/*表单控件*/
+:global(.ant-input:hover) {
+	border-color: $main-color;
+}
+:global(.ant-radio-inner::after, .ant-select:not(.ant-select-disabled):hover .ant-select-selector) {
+	background-color: $main-color !important;
+}
+:global(.ant-select-item-option-selected:not(.ant-select-item-option-disabled)) {
+	background-color: $background-color;
+}
+:global(.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover) {
+	background-color: $background-color;
+}
+:global(.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover) {
+	background-color: $main-color;
+}
+:global(.ant-switch-checked) {
+	background-color: $main-color;
+}
+:global(.ant-checkbox-checked .ant-checkbox-inner) {
+	background-color: $main-color;
+}
+:global(.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover) {
+	background-color: $background-color !important;
+}
+:global(.ant-radio-checked::after) {
+	border: 1px solid $main-color;
+}
+:global(.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover) {
+	border-color: $main-color !important;
+}
+:global(.ant-tree-checkbox-checked .ant-tree-checkbox-inner) {
+	background-color: $main-color;
+	border-color: $main-color;
+}
+:global(.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-start
+		.ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner) {
+	background-color: $main-color;
+}
+:global(a) {
+	color: $main-color;
+}
+:global(.ant-picker-cell-in-view.ant-picker-cell-in-range::before) {
+	background: $background-color !important;
+}
+:global(.ant-picker-cell-range-start .ant-picker-cell-inner) {
+	background: $main-color !important;
+}
+:global(.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-start
+		.ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner) {
+	background-color: $main-color !important;
+}
+:global(.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner) {
+	background-color: $main-color !important;
+}
+
+/*加载中*/
+:global(.ant-spin) {
+	color: $main-color !important;
+}
+:global(.ant-spin-dot-item) {
+	background-color: $main-color;
+}
+:global(.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-start
+		.ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner) {
+	background-color: $main-color;
+}
+:global(.ant-table-body .ant-spin-dot-item) {
+	background-color: $main-color;
+}
